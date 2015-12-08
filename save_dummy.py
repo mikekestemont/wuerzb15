@@ -1,6 +1,6 @@
 from pystyl.corpus import Corpus
 corpus = Corpus(language='en')
-corpus.add_directory('data/victorian')
+corpus.add_directory('data/victorian_small')
 corpus.preprocess()
 corpus.tokenize(max_size=50000)
 corpus.vectorize(mfi=100, ngram_type='word', vector_space='tf')
